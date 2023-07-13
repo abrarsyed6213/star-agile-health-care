@@ -10,7 +10,7 @@ pipeline {
     stage('CheckOut') {
       steps {
         echo 'Checkout the source code from GitHub'
-	git 'https://github.com/Fatima-Ishrath021/star-agile-health-care.git'
+	git 'https://github.com/abrarsyed6213/star-agile-health-care.git'
             }
     }
    
