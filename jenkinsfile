@@ -23,13 +23,13 @@ pipeline {
    stage('HTML reports') {
       steps {
         echo 'publishing HTML reports'
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/MAVEN', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/HEALTH-CARE PROJECT', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
            }
    	 }
 
 stage('Image creation') {
       steps {
-        sh 'docker build -t fatima021/health-care021:latest .'
+        sh 'docker build -t abrarsyed07:latest .'
                     }
             }
 
