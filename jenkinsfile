@@ -39,17 +39,11 @@ stage('Docker Login') {
               withCredentials([string(credentialsId: 'syedabrar07', variable: 'docker-hub')]) {
               sh ' docker  login --username  syedabrar07 --password "abrar@6213" && docker push syedabrar07:latest' 
 }               
-               sh 'docker push syedabrar07:latest
+              sh 'docker push syedabrar07:latest
            }
        }
  }    
-
- stage('Push Image to Docker Registry') {
-      steps {
-        sh 'docker push syedabrar07:latest '
-            }
-           }
-    stage ('Configure Test-server with Terraform'){
+stage ('Configure Test-server with Terraform'){
       steps {
         dir('serverfiles'){
         sh 'sudo chmod 600 fatima.pem'
