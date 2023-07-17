@@ -35,7 +35,7 @@ stage('Image creation') {
 
 stage('Docker Login') {
       steps {
-	withCredentials([usernamePassword(credentialsId: 'docker-login', passwordVariable: 'dockerpsswd', usernameVariable: 'dockeruser')]) {
+	withCredentials([usernamePassword(credentialsId: 'docker-login', passwordVariable: 'abrar@6213', usernameVariable: 'syedabrar07')]) {
         sh "docker login -u ${env.dockeruser} -p ${env.dockerpsswd}"
 }
             }
