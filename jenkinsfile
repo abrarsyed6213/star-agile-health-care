@@ -29,7 +29,7 @@ pipeline {
 
 stage('Image creation') {
       steps {
-        sh 'docker build -t abrarsyed07:latest .'
+        sh 'docker build -t syedabrar07:latest .'
                     }
             }
 
